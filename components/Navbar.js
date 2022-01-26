@@ -1,0 +1,58 @@
+import Link from 'next/link'
+import { useEffect } from 'react'
+
+export default function Navbar() {
+  useEffect(() => {
+    const button = document.querySelector('button.mobile-menu-button')
+    const menu = document.querySelector('.mobile-menu')
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden')
+    })
+  }, [])
+
+  return (
+    <nav className="bg-gray-100 shadow-lg">
+      {/* Main Nav Menu */}
+      <section className='max-w-6xl mx-auto px-4'>
+        <div className='flex justify-between'>
+          {/* Logo */}
+          <section className='flex items-center py-4 px-2'>
+            <img src='avatar.png' alt='GlennMeyer.DEV Logo' className='h-8 w-8 mr-2' />
+            <span className='font-semibold text-green-700 text-lg'>GlennMeyer.DEV</span>
+          </section>
+          {/* Main Nav Items */}
+          <section className='flex'>
+            <div className="hidden md:flex items-center space-x-7">
+              <a href="/" className="flex py-4 px-2 text-green-600 font-semibold">Home</a>
+              <a href="/about" className="flex py-4 px-2 text-gray-500 hover:text-green-600 font-semibold transition duration-300">About</a>
+            </div>
+          </section>
+          {/* Mobile Menu Button */}
+          <section className="md:hidden flex items-center">
+            <button className="outline-none mobile-menu-button">
+              <svg className="w-6 h-6 text-gray-600 hover:text-green-600"
+                x-show="!showMenu"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </section>
+        </div>
+      </section>
+      {/* Mobile Nav Menu */}
+      <section>
+        <div className="hidden mobile-menu">
+          <ul className="flex flex-col">
+            <li className="active flex justify-center"><Link href="/" className="block text-sm px-2 py-4 my-4 text-white bg-green-500 font-semibold">Home</Link></li>
+            <li className='flex justify-center'><Link href="/about" className="block text-sm px-2 py-4 my-4 hover:bg-green-500 transition duration-300">About</Link></li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  )
+}
