@@ -18,19 +18,19 @@ export default function Navbar() {
           {/* Logo */}
           <section className='flex items-center py-4 px-2'>
             <img src='avatar.png' alt='GlennMeyer.DEV Logo' className='h-8 w-8 mr-2' />
-            <span className='font-semibold text-green-700 text-lg'>GlennMeyer.DEV</span>
+            <span className='font-semibold text-sky-700 text-lg'>GlennMeyer.DEV</span>
           </section>
           {/* Main Nav Items */}
           <section className='flex'>
             <div className="hidden md:flex items-center space-x-7">
-              <a href="/" className="flex py-4 px-2 text-green-600 font-semibold">Home</a>
-              <a href="/about" className="flex py-4 px-2 text-gray-500 hover:text-green-600 font-semibold transition duration-300">About</a>
+              <a href="/" className="flex py-4 px-2 text-sky-600 font-semibold">Home</a>
+              <a href="/about" className="flex py-4 px-2 text-gray-500 hover:text-sky-600 font-semibold transition duration-300">About</a>
             </div>
           </section>
           {/* Mobile Menu Button */}
           <section className="md:hidden flex items-center">
             <button className="outline-none mobile-menu-button">
-              <svg className="w-6 h-6 text-gray-600 hover:text-green-600"
+              <svg className="w-6 h-6 text-gray-600 hover:text-sky-600"
                 x-show="!showMenu"
                 fill="none"
                 strokeLinecap="round"
@@ -48,8 +48,8 @@ export default function Navbar() {
       <section>
         <div className="hidden mobile-menu">
           <ul className="flex flex-col">
-            <li className="active flex justify-center"><Link href="/" className="block text-sm px-2 py-4 my-4 text-white bg-green-500 font-semibold">Home</Link></li>
-            <li className='flex justify-center'><Link href="/about" className="block text-sm px-2 py-4 my-4 hover:bg-green-500 transition duration-300">About</Link></li>
+            <li className="active flex justify-center"><Link href="/" className="block text-sm px-2 py-4 my-4 text-white bg-sky-500 font-semibold">Home</Link></li>
+            <li className='flex justify-center'><Link href="/about" className="block text-sm px-2 py-4 my-4 hover:bg-sky-500 transition duration-300">About</Link></li>
           </ul>
         </div>
       </section>
