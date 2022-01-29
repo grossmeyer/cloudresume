@@ -1,6 +1,8 @@
 {
-  "name": "resume",
+  "name": "cloudresume",
   "version": "0.1.0",
+  "author": "Glenn Meyer",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
