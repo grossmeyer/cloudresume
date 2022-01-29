@@ -11,7 +11,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className='sticky top-8 z-10 bg-sky-400 backdrop-filter backdrop-blur-sm bg-opacity-20 firefox:bg-opacity-35 transition-colors duration-500 font-main shadow-lg'>
+    <nav className='sticky top-8 z-10 bg-sky-400 backdrop-filter backdrop-blur-sm bg-opacity-20 firefox:bg-opacity-35 transition-colors duration-500 font-main shadow-lg rounded-2xl mx-4'>
       {/* Main Nav Menu */}
       <section className='max-w-6xl mx-auto px-4'>
         <div className='flex justify-between'>
