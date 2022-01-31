@@ -23,8 +23,12 @@ export default function Navbar() {
           {/* Main Nav Items */}
           <section className='flex'>
             <div className="hidden md:flex items-center space-x-7">
-              <a href="/" className="flex py-4 px-2 text-sky-700 font-semibold">Home</a>
-              <a href="/about" className="flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300">About</a>
+              <Link href="/">
+                <a className="flex py-4 px-2 text-sky-700 font-semibold">Home</a>
+              </Link>
+              <Link href="/about" as="/about.html" >
+                <a className="flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300">About</a>
+              </Link>
             </div>
           </section>
           {/* Mobile Menu Button */}
