@@ -8,7 +8,7 @@ export default function About() {
       <Layout />
       <main>
         <h1 className="text-3xl font-bold underline">
-          How this was made
+          How this website was made
         </h1>
       </main>
     </>

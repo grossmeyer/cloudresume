@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className='flex justify-between'>
           {/* Logo */}
           <section className='flex items-center py-4 px-2'>
-            <img src='avatar.png' alt='GlennMeyer.DEV Logo' className='h-8 w-8 mr-2' />
+            <img src='avatar.webp' alt='GlennMeyer.DEV Logo' width='32' height='35' className='w-8 mr-2' />
             <span className='font-semibold text-sky-900 text-lg'>GlennMeyer.dev</span>
           </section>
           {/* Main Nav Items */}
@@ -33,7 +33,7 @@ export default function Navbar() {
           </section>
           {/* Mobile Menu Button */}
           <section className="md:hidden flex items-center">
-            <button className="outline-none mobile-menu-button">
+            <button className="outline-none mobile-menu-button" aria-label='Mobile Menu'>
               <svg className="w-6 h-6 text-slate-600 hover:text-sky-600"
                 x-show="!showMenu"
                 fill="none"
