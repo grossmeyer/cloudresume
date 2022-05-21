@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+  const router = useRouter()
+  const activePage = 'flex py-4 px-2 text-sky-700 font-semibold'
+  const otherPage = 'flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300'
   useEffect(() => {
     const button = document.querySelector('button.mobile-menu-button')
     const menu = document.querySelector('.mobile-menu')
@@ -24,10 +28,10 @@ export default function Navbar() {
           <section className='flex'>
             <div className='hidden md:flex items-center space-x-7'>
               <Link href='/'>
-                <a className='flex py-4 px-2 text-sky-700 font-semibold'>Home</a>
+                <a className={router.pathname == '/' ? activePage : otherPage}>Home</a>
               </Link>
               <Link href='/about' as='/about.html' >
-                <a className='flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300'>About</a>
+                <a className={router.pathname == '/about' ? activePage : otherPage}>About</a>
               </Link>
             </div>
           </section>
