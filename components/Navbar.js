@@ -22,27 +22,27 @@ export default function Navbar() {
           </section>
           {/* Main Nav Items */}
           <section className='flex'>
-            <div className="hidden md:flex items-center space-x-7">
-              <Link href="/">
-                <a className="flex py-4 px-2 text-sky-700 font-semibold">Home</a>
+            <div className='hidden md:flex items-center space-x-7'>
+              <Link href='/'>
+                <a className='flex py-4 px-2 text-sky-700 font-semibold'>Home</a>
               </Link>
-              <Link href="/about" as="/about.html" >
-                <a className="flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300">About</a>
+              <Link href='/about' as='/about.html' >
+                <a className='flex py-4 px-2 text-slate-600 hover:text-sky-600 font-semibold transition duration-300'>About</a>
               </Link>
             </div>
           </section>
           {/* Mobile Menu Button */}
-          <section className="md:hidden flex items-center">
-            <button className="outline-none mobile-menu-button" aria-label='Mobile Menu'>
-              <svg className="w-6 h-6 text-slate-600 hover:text-sky-600"
-                x-show="!showMenu"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path d="M4 6h16M4 12h16M4 18h16" />
+          <section className='md:hidden flex items-center'>
+            <button className='outline-none mobile-menu-button' aria-label='Mobile Menu'>
+              <svg className='w-6 h-6 text-slate-600 hover:text-sky-600'
+                x-show='!showMenu'
+                fill='none'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                viewBox='0 0 24 24'
+                stroke='currentColor'>
+                <path d='M4 6h16M4 12h16M4 18h16' />
               </svg>
             </button>
           </section>
@@ -50,10 +50,10 @@ export default function Navbar() {
       </section>
       {/* Mobile Nav Menu */}
       <section>
-        <div className="hidden mobile-menu">
-          <ul className="flex flex-col">
-            <li className="active flex justify-center"><Link href="/" className="block text-sm px-2 py-4 my-4 text-white bg-sky-500 font-semibold">Home</Link></li>
-            <li className='flex justify-center'><Link href="/about" className="block text-sm px-2 py-4 my-4 hover:bg-sky-500 transition duration-300">About</Link></li>
+        <div className='hidden mobile-menu'>
+          <ul className='flex flex-col'>
+            <li className='active flex justify-center'><Link href='/' className='block text-sm px-2 py-4 my-4 text-white bg-sky-500 font-semibold'>Home</Link></li>
+            <li className='flex justify-center'><Link href='/about' className='block text-sm px-2 py-4 my-4 hover:bg-sky-500 transition duration-300'>About</Link></li>
           </ul>
         </div>
       </section>

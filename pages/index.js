@@ -7,7 +7,7 @@ export default function Home() {
       <CustomHead headTitle='Cloud Resume - Glenn Meyer' headDescription="Glenn Meyer's Cloud Resume" />
       <Layout />
       <main className='flex flex-col md:flex-row justify-center mt-5 font-main'>
-        <aside className='md:sticky top-32 w-1/8 h-full mt-2 p-8 bg-sky-700 shadow-xl'>
+        <aside className='md:sticky top-32 w-1/8 h-full mt-12 py-4 px-8 bg-sky-700 shadow-xl'>
           {/* Profile Picture */}
           <section className='flex items-center justify-center mb-10'>
             <img src='avatar.webp' alt='Stylized avatar of Glenn Meyer' width='128' height='139' className='w-32' />
@@ -62,7 +62,7 @@ export default function Home() {
             </ul>
           </section>
         </aside>
-        <article className='md:w-7/12 w-auto h-auto mt-3 p-10'>
+        <article className='md:w-7/12 w-auto h-auto p-10'>
           <h1 className='text-sky-800 text-3xl font-semibold'>Glenn Meyer</h1>
           <p>Change Agent driving organizations towards agile development, cloud computing, automation, and embracing DevOps philosophy</p>
           <h2 className='font-semibold uppercase tracking-wider mt-6 mb-2 text-slate-500 text-2xl'>Professional Experience</h2>
