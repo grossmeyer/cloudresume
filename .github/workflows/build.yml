@@ -3,20 +3,22 @@
 # For more information see:
 # https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: NextJS Build
-
+name: NextJS Build and Deploy
 on:
   push:
     branches: [main]
-
+permissions:
+  id-token: write
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment:
+      name: production
+      url: https://github.com
     strategy:
       matrix:
         node-version: [16.x, 17.x, 18.x]
-
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -24,11 +26,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - uses: actions/cache@v3
         id: yarn-cache
         with:
@@ -36,7 +36,16 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: yarn build
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.IAM_ROLE }}
+          role-session-name: githubdeploy
+          aws-region: ${{ secrets.AWS_REGION }}
+      # Upload a file to AWS s3
+      - name: Copy index.html to s3
+        run: |
+          aws s3 cp ./index.html s3://${{ secrets.S3_BUCKET }}/
