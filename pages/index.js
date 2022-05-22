@@ -7,7 +7,7 @@ export default function Home() {
       <CustomHead headTitle='Cloud Resume - Glenn Meyer' headDescription="Glenn Meyer's Cloud Resume" />
       <Layout />
       <main className='flex flex-col md:flex-row justify-center mt-5 font-main'>
-        <aside className='md:sticky top-32 w-1/8 h-full mt-12 py-4 px-8 bg-sky-700 shadow-xl'>
+        <aside className='md:sticky top-32 w-1/8 h-full mt-12 md:ml-4 py-4 px-8 bg-sky-700 shadow-xl'>
           {/* Profile Picture */}
           <section className='flex items-center justify-center mb-10'>
             <img src='avatar.webp' alt='Stylized avatar of Glenn Meyer' width='128' height='139' className='w-32' />
