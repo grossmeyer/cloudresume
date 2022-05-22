@@ -39,7 +39,7 @@ jobs:
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - name: configure aws credentials
+      - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.IAM_ROLE }}
@@ -47,5 +47,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       # Upload a file to AWS s3
       - name: Copy index.html to s3
-        run: |
-          aws s3 cp ./index.html s3://${{ secrets.S3_BUCKET }}/
+        run: aws s3 sync ./out s3://${{ secrets.S3_BUCKET }}
