@@ -33,12 +33,8 @@ jobs:
       - uses: actions/cache@v3
         id: yarn-cache
         with:
-          path: |
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-            ${{ github.workspace }}/.next/cache
-          key: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-            ${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: npm install -g yarn
@@ -50,6 +46,5 @@ jobs:
           role-to-assume: ${{ secrets.IAM_ROLE }}
           role-session-name: githubdeploy
           aws-region: ${{ secrets.AWS_REGION }}
-      # Upload a file to AWS s3
       - name: Copy index.html to s3
         run: aws s3 sync ./out s3://${{ secrets.S3_BUCKET }}
