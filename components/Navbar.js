@@ -30,7 +30,7 @@ export default function Navbar() {
               <Link href='/'>
                 <a className={router.pathname == '/' ? activePage : otherPage}>Home</a>
               </Link>
-              <Link href='/about' as='/about' >
+              <Link href='/about' as='/about.html' >
                 <a className={router.pathname == '/about' ? activePage : otherPage}>About</a>
               </Link>
             </div>
