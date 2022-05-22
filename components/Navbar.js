@@ -55,9 +55,9 @@ export default function Navbar() {
       {/* Mobile Nav Menu */}
       <section>
         <div className='hidden mobile-menu'>
-          <ul className='flex flex-col'>
-            <li className='active flex justify-center'><Link href='/' className='block text-sm px-2 py-4 my-4 text-white bg-sky-500 font-semibold'>Home</Link></li>
-            <li className='flex justify-center'><Link href='/about' className='block text-sm px-2 py-4 my-4 hover:bg-sky-500 transition duration-300'>About</Link></li>
+          <ul className='flex flex-col items-center'>
+            <li className='flex justify-center py-2 mb-2 text-md text-white bg-sky-500 w-1/3 rounded-md font-semibold'><Link href='/' className='block'>Home</Link></li>
+            <li className='flex justify-center py-2 mb-2 text-md text-white bg-sky-500 w-1/3 rounded-md font-semibold'><Link href='/about' as='/about.html' className='block'>About</Link></li>
           </ul>
         </div>
       </section>

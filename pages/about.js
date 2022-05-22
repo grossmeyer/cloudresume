@@ -25,7 +25,7 @@ export default function About() {
           </p>
 
           <h3 className='text-slate-800 font-semibold text-xl mt-6 mb-2'>Overall Completion Status:</h3>
-          <p className='my-2'>
+          <section className='my-2'>
             <ol className='list-decimal ml-6'>
               <li className='mb-4'>
                 Certification: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> (AWS Solutions Architect Associate September 2020)
@@ -76,7 +76,7 @@ export default function About() {
                 Blog Post: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> This About page will serve for now, later I'll migrate this over to a real blog
               </li>
             </ol>
-          </p>
+          </section>
 
           <h3 className='text-slate-800 font-semibold text-xl mt-6 mb-2'>Work in progress...</h3>
 
