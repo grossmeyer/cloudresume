@@ -61,14 +61,14 @@ export default function Home() {
             <hr className='mb-5 w-1/6' />
             <ul className='list-disc'>
               <li className='text-sm ml-4'>Enterprise Systems Architecture</li>
+              <li className='text-sm ml-4'>Agile Software Development and Project Management</li>
               <li className='text-sm ml-4'>Networking (Routing and Switching)</li>
               <li className='text-sm ml-4'>Information Security (Firewalls and Application Security)</li>
-              <li className='text-sm ml-4'>Agile Software Development and Project Management</li>
-              <li className='text-sm ml-4'>Workstation and Server Management (Windows and Linux)</li>
-              <li className='text-sm ml-4'>Technical Documentation (including Visio)</li>
-              <li className='text-sm ml-4'>AWS Lambda (Node.js) and DynamoDB</li>
-              <li className='text-sm ml-4'>Javascript (including React/Next.js)</li>
               <li className='text-sm ml-4'>Virtualization (VMware and Hyper-V)</li>
+              <li className='text-sm ml-4'>Workstation and Server Management (Windows and Linux)</li>
+              <li className='text-sm ml-4'>AWS Lambda and DynamoDB</li>
+              <li className='text-sm ml-4'>Programming (Javascript/Go/Python)</li>
+              <li className='text-sm ml-4'>Technical Documentation (Visio/Markdown)</li>
             </ul>
           </section>
         </aside>
@@ -96,10 +96,10 @@ export default function Home() {
           <section>
             <h3 className='text-slate-700 text-2xl mt-4'>Third Federal Savings and Loan</h3>
             <hr className='w-1/6 border-slate-700' />
-            <h4 className='text-slate-800 font-semibold text-xl mt-4'>Technical Project Manager <span className='font-medium text-lg'>(February 2021 - Present)</span></h4>
+            <h4 className='text-slate-800 font-semibold text-xl mt-4'>Technical Project Manager <span className='font-medium text-lg'>(February 2021 - March 2022)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
               <li>Oversaw strategic operations of the Loan Origination System (LOS) product, including ownership of the vision statement, roadmap, and objectives and key results</li>
-              <li>Train colleagues and managers on agile development concepts (user stories, Kanban, culture change) and DevOps tools (Azure DevOps Server, Docker, Kubernetes, Git)</li>
+              <li>Trained colleagues and managers on agile development concepts (user stories, Kanban, culture change) and DevOps tools (Azure DevOps Server, Docker, Kubernetes, Git)</li>
               <li>Managed projects corresponding to LOS roadmap goals including:</li>
             </ul>
             <ul className='list-circle text-slate-900 ml-8'>
@@ -111,7 +111,7 @@ export default function Home() {
             </ul>
             <ul className='list-disc text-slate-900 ml-4'>
               <li>Led daily standups using Azure DevOps Boards (kanban) to track progress of individual work items and communicate status to business owners</li>
-              <li>Facilitated Sprint planning meetings according to our increment schedule (occurring every 1-3 weeks)</li>
+              <li>Facilitated Sprint planning meetings according to our increment schedule (occurring every 1-4 weeks)</li>
               <li>Conducted "SWAT" incident response teams for critical outages, creating ad hoc cross-functional teams tasked with restoring service to key applications within expected SLOs; key deliverables out of these incident response teams were to conduct blameless post-mortem analyses to create solutions to reduce the need for future manual intervention</li>
               <li>Trained developers, sysadmins, and project managers on using Git, specifically with Azure DevOps Repos</li>
               <li>Wrote and maintained wiki documentation site in Azure DevOps, all written in Markdown files; content included Agile and DevOps topics as well as information about the LOS product</li>
@@ -147,7 +147,7 @@ export default function Home() {
               <li>Configured all Cisco hardware for daily configuration backups to an FTP server, Sophos devices performed configuration backups using email</li>
               <li>Redesigned network to more effectively utilize MPLS WAN connections, specifically related to optimal traffic flow for data and VoIP services, as well as configuring multi-site failover and high-availability; HA design utilized redundant Sophos UTM SGs in an active/passive pair and Cisco 3750 switch stacks in active/active configurations; HA was maintained using OSPF, IP SLA, and default route redistribution dynamically per a predefined route hierarchy</li>
               <li>Managed Cisco ASA AnyConnect VPN for remote access; updated and modified configuration as needed, troubleshooting outages when they occurred</li>
-              <li>Migrated from an on-premise hosted VoIP service provider to a cloud hosted VoIP service provider, which required VoIP provisioning and QoS to be configured on our own equipment (previous system was configured and used entirely on the Service Provider’s network hardware)</li>
+              <li>Migrated from an on-premise hosted VoIP service provider to a cloud hosted VoIP service provider, which required VoIP provisioning and QoS to be configured on our own equipment (previous system was configured and used entirely on the Service Provider's network hardware)</li>
               <li>Created custom QoS configuration to handle internal traffic classification for VoIP equipment and other services</li>
               <li>Provisioned VoIP phones using LLDP-MED network policies and DHCP; QoS policies using DSCP were also created to properly mark softphone traffic from PCs, laptops, and smartphones at layer 3</li>
               <li>Audited and documented all devices connected to the network, including PCs, printers, servers, routers, switches, firewalls, Wireless APs, and miscellaneous equipment</li>
@@ -164,12 +164,12 @@ export default function Home() {
               <li>Used PowerShell to recover lost or accidentally deleted emails from Outlook 365 (Exchange Online)</li>
               <li>Created Sharepoint sites and groups to modernize file share storage and access needs</li>
               <li>Built Linux servers running mDNS/Avahi to enable iPads to use Airprint to print wirelessly at all sites</li>
-              <li>Developed PowerShell scripts and deployed them by GPO to remove all unlicensed copies of Microsoft Office from company-owned PCs, and replace them with our properly licensed Office 2016 software; These scripts were developed, tested, and successfully deployed in less than one week in response to an audit request from Microsoft; we passed our audit with no issues despite the time crunch</li>
+              <li>Developed PowerShell scripts and deployed them by GPO to remove all unlicensed copies of Microsoft Office from company-owned PCs, and replace them with our properly licensed Office 2016 software</li>
             </ul>
           </section>
           {/* Employer 4 Section */}
           <section>
-            <h3 className='text-slate-700 text-2xl mt-4'>Third Federal Savings and Loan</h3>
+            <h3 className='text-slate-700 text-2xl mt-4'>The Ohio State University</h3>
             <hr className='w-1/6 border-slate-700' />
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Network Engineer <span className='font-medium text-lg'>(June 2013 - October 2015)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
@@ -192,7 +192,7 @@ export default function Home() {
             <ul className='list-disc text-slate-900 ml-4'>
               <li>Managed the Client Computing Services IT Division at the OSU Wooster Campus/OARDC, a small team of professional and student workers</li>
               <li>Used an in-house ticketing system to monitor and resolve Help Desk and Desktop services requests in a timely and efficient manner</li>
-              <li>Resolved security vulnerabilities detected by Nessus scans within 30 days of discovery, per the University’s security standards</li>
+              <li>Resolved security vulnerabilities detected by Nessus scans within 30 days of discovery, per the University's security standards</li>
               <li>Acted as top-level technical support for any service requests that were escalated from the Help Desk or Desktop teams</li>
             </ul>
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Systems Specialist <span className='font-medium text-lg'>(January 2010 - June 2013)</span></h4>
@@ -201,7 +201,7 @@ export default function Home() {
               <li>Installed, configured, and repaired lab instrument PCs with highly specialized configurations</li>
               <li>Used Microsoft Active Directory to create, modify, and remove Users, Groups, and Computers, including resetting user passwords, restricting logon access, and group management for file share and RADIUS server access</li>
               <li>Used Microsoft DHCP server to create and monitor DHCP pools, add/remove MAC addresses to the Allow or Deny Filters, create DHCP reservations, and document used IP addresses in an Excel spreadsheet</li>
-              <li>Configured VLANs and switchports on Cisco Catalyst switches via telnet, SSH, or console port</li>
+              <li>Configured VLANs and switchports on Cisco Catalyst switches via telnet, SSH, or console ports</li>
             </ul>
           </section>
         </article>
