@@ -71,6 +71,22 @@ export default function Home() {
           <h2 className='font-semibold uppercase tracking-wider mt-6 mb-2 text-slate-500 text-2xl'>Professional Experience</h2>
           {/* Employer 1 Section */}
           <section>
+            <h3 className='text-slate-700 text-2xl mt-4'>Fortune Brands Water Innovations - Moen, Inc.</h3>
+            <hr className='w-1/6 border-slate-700' />
+            <h4 className='text-slate-800 font-semibold text-xl mt-4'>Lead Infrastructure Architect <span className='font-medium text-lg'>(March 2022 - Present)</span></h4>
+            <ul className='list-disc text-slate-900 ml-4'>
+              <li>Windows Server 2012, 2016, 2019, and 2022</li>
+              <li>SUSE Linux 11, 12, and 15</li>
+              <li>Git/Github Administration</li>
+              <li>Ansible and Ansible-Playbook</li>
+              <li>F5 BIG-IP Load Balancer</li>
+              <li>Cisco Networking (Catalyst, Nexus, WLC, and ASA)</li>
+              <li>Fortinet Fortigate</li>
+              <li>PRTG Monitoring</li>
+            </ul>
+          </section>
+          {/* Employer 2 Section */}
+          <section>
             <h3 className='text-slate-700 text-2xl mt-4'>Third Federal Savings and Loan</h3>
             <hr className='w-1/6 border-slate-700' />
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Technical Project Manager <span className='font-medium text-lg'>(February 2021 - Present)</span></h4>
@@ -111,7 +127,7 @@ export default function Home() {
               <li>Provided third level support for end-user (application), workstation, developer, telecom, DBA, server, mainframe, and security teams</li>
             </ul>
           </section>
-          {/* Employer 2 Section */}
+          {/* Employer 3 Section */}
           <section>
             <h3 className='text-slate-700 text-2xl mt-4'>Bernie Moreno Companies</h3>
             <hr className='w-1/6 border-slate-700' />
@@ -144,7 +160,7 @@ export default function Home() {
               <li>Developed PowerShell scripts and deployed them by GPO to remove all unlicensed copies of Microsoft Office from company-owned PCs, and replace them with our properly licensed Office 2016 software; These scripts were developed, tested, and successfully deployed in less than one week in response to an audit request from Microsoft; we passed our audit with no issues despite the time crunch</li>
             </ul>
           </section>
-          {/* Employer 3 Section */}
+          {/* Employer 4 Section */}
           <section>
             <h3 className='text-slate-700 text-2xl mt-4'>Third Federal Savings and Loan</h3>
             <hr className='w-1/6 border-slate-700' />
