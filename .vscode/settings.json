@@ -3,5 +3,8 @@
   "prettier.jsxBracketSameLine": true,
   "prettier.printWidth": 120,
   "prettier.semi": false,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/repos/html/resume/.github/workflows/build.yml"
+  }
 }
