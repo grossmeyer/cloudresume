@@ -15,14 +15,14 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className='sticky top-8 z-10 bg-sky-400 backdrop-filter backdrop-blur-sm bg-opacity-20 firefox:bg-opacity-35 transition-colors duration-500 font-main shadow-lg rounded-2xl mx-4'>
+    <nav className='sticky top-8 z-10 bg-sky-300 backdrop-filter backdrop-blur-sm bg-opacity-20 firefox:bg-opacity-35 transition-colors duration-500 font-main shadow-lg rounded-2xl mx-4'>
       {/* Main Nav Menu */}
       <section className='max-w-6xl mx-auto px-4'>
         <div className='flex justify-between'>
           {/* Logo */}
           <section className='flex items-center py-4 px-2'>
             <img src='avatar.webp' alt='GlennMeyer.DEV Logo' width='32' height='35' className='w-8 mr-2' />
-            <span className='font-semibold text-sky-900 text-lg'>GlennMeyer.dev</span>
+            <span className='font-semibold text-sky-700 text-lg'>GlennMeyer.dev</span>
           </section>
           {/* Main Nav Items */}
           <section className='flex'>
