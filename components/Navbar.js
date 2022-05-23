@@ -30,7 +30,7 @@ export default function Navbar() {
               <Link href='/'>
                 <a className={router.pathname == '/' ? activePage : otherPage}>Home</a>
               </Link>
-              <Link href='/about' as='/about.html' >
+              <Link href='/about' >
                 <a className={router.pathname == '/about' ? activePage : otherPage}>About</a>
               </Link>
             </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
         <div className='hidden mobile-menu'>
           <ul className='flex flex-col items-center'>
             <li className='flex justify-center py-2 mb-2 text-md text-white bg-sky-500 w-1/3 rounded-md font-semibold'><Link href='/' className='block'>Home</Link></li>
-            <li className='flex justify-center py-2 mb-2 text-md text-white bg-sky-500 w-1/3 rounded-md font-semibold'><Link href='/about' as='/about.html' className='block'>About</Link></li>
+            <li className='flex justify-center py-2 mb-2 text-md text-white bg-sky-500 w-1/3 rounded-md font-semibold'><Link href='/about' className='block'>About</Link></li>
           </ul>
         </div>
       </section>
