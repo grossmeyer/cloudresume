@@ -1,6 +1,7 @@
 import CustomHead from '../components/CustomHead'
 import FL from '../components/FancyLink'
 import Layout from '../components/Layout'
+import ViewCounter from '../components/ViewCounter'
 
 export default function About() {
   return (
@@ -86,6 +87,7 @@ export default function About() {
 
         </article>
       </main>
+      <ViewCounter />
     </>
   )
 }

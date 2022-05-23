@@ -1,5 +1,6 @@
 import CustomHead from '../components/CustomHead.js'
 import Layout from '../components/Layout'
+import ViewCounter from '../components/ViewCounter'
 
 export default function Home() {
   return (
@@ -206,6 +207,7 @@ export default function Home() {
           </section>
         </article>
       </main>
+      <ViewCounter />
     </>
   )
 }
