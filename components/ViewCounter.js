@@ -23,7 +23,7 @@ export default function ViewCounter() {
 
   return (
     <footer className='flex flex-col font-main text-center items-center m-4 p-4'>
-      <div className='mt-4 p-2 text-lg text-slate-100 bg-sky-700 rounded-lg w-1/6'>
+      <div className='mt-4 p-2 text-lg text-slate-100 bg-sky-700 rounded-lg md:w-1/6 w-1/2'>
         <p>Page views: {viewCount}</p>
       </div>
     </footer>
