@@ -1,6 +1,8 @@
+import Image from 'next/image'
 import CustomHead from '../components/CustomHead.js'
 import Layout from '../components/Layout'
 import ViewCounter from '../components/ViewCounter'
+import avatar from '../public/avatar.webp'
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
         <aside className='md:sticky top-32 w-1/8 h-full mt-12 md:ml-4 py-4 px-8 bg-sky-700 shadow-xl'>
           {/* Profile Picture */}
           <section className='flex items-center justify-center mb-10'>
-            <img src='avatar.webp' alt='Stylized avatar of Glenn Meyer' width='128' height='139' className='w-32' />
+            <Image src={avatar} alt='Stylized avatar of Glenn Meyer' width='128' height='139' className='w-32' />
           </section>
           {/* Contact Section */}
           <section className='text-slate-100'>
