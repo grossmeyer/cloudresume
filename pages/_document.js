@@ -5,7 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=optional" rel="stylesheet" />
         <body>
           <Main />
           <NextScript />

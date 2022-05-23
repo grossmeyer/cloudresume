@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import '../styles/globals.css'
+import '@fontsource/mulish/400.css'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,8 +16,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:image" content="https://glennmeyer.dev/avatar.webp" />
         <link rel="canonical" href="https://glennmeyer.dev" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       <Component {...pageProps} />
     </>
