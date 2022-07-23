@@ -1,7 +1,7 @@
-import CustomHead from '../components/CustomHead'
-import FL from '../components/FancyLink'
-import Layout from '../components/Layout'
-import ViewCounter from '../components/ViewCounter'
+import CustomHead from 'components/CustomHead'
+import FL from 'components/FancyLink'
+import Layout from 'components/Layout'
+import ViewCounter from 'components/ViewCounter'
 
 export default function About() {
   return (
@@ -11,10 +11,10 @@ export default function About() {
       <main className='flex flex-col justify-center font-main'>
         <article className='w-auto h-auto mt-2 py-4 px-12'>
           <h2 className='font-semibold uppercase tracking-wider mt-6 mb-2 text-slate-500 text-2xl'>
-            About This Website
+            About Glenn's Resume
           </h2>
           <p className='my-2'>
-            This is Glenn Meyer's resume, created based on the parameters specified by Forrest Brazeal on the <FL href='https://cloudresumechallenge.dev/docs/the-challenge/aws/' aria='Cloud Resume Challenge dot dev' text='Cloud Resume Challenge website' />. My implementation is a <FL href='https://nextjs.org/' aria='Next JS dot org' text='Next.js' /> project bootstrapped with <FL href='https://github.com/vercel/next.js/tree/canary/packages/create-next-app' aria='Create Next app' text='create-next-app' />.
+            Glenn Meyer's resume was created using the parameters specified by Forrest Brazeal on the <FL href='https://cloudresumechallenge.dev/docs/the-challenge/aws/' aria='Cloud Resume Challenge dot dev' text='Cloud Resume Challenge website' />. My implementation is a <FL href='https://nextjs.org/' aria='Next JS dot org' text='Next.js' /> project bootstrapped with <FL href='https://github.com/vercel/next.js/tree/canary/packages/create-next-app' aria='Create Next app' text='create-next-app' />.
           </p>
 
           <p className='my-2'>
@@ -29,7 +29,7 @@ export default function About() {
           <section className='my-2'>
             <ol className='list-decimal ml-6'>
               <li className='mb-4'>
-                Certification: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> (AWS Solutions Architect Associate September 2020)
+                Certification: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> AWS Solutions Architect Associate: exam passed September 2020
               </li>
               <li className='mb-4'>
                 HTML: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> You're seein' it here!
@@ -47,7 +47,7 @@ export default function About() {
                 DNS: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> NameCheap DNS is pointing at the CloudFront distribution
               </li>
               <li className='mb-4'>
-                Javascript: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> Although the entire website is written in Javascript (using NextJS), the visitor counter still needs written
+                Javascript: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> Although the entire website is written in Javascript (using NextJS), the visitor counter is displaying static data
               </li>
               <li className='mb-4'>
                 Database: <span className='bg-red-400 rounded-md px-2 py-1'>NOT STARTED</span> Creating a table in DynamoDB to store visitor counter data is the easy part
@@ -65,13 +65,13 @@ export default function About() {
                 IaC: <span className='bg-red-400 rounded-md px-2 py-1'>NOT STARTED</span> All of the AWS infrastructure should be able to be deleted and recreated using CloudFormation
               </li>
               <li className='mb-4'>
-                Source Control: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> GitHub is already in use
+                Source Control: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> GitHub is already in use; check out the <FL href='https://github.com/grossmeyer/cloudresume' aria='Cloud Resume GitHub Repo' text='public repo' />!
               </li>
               <li className='mb-4'>
                 CI/CD (Backend): <span className='bg-red-400 rounded-md px-2 py-1'>NOT STARTED</span> Can't complete this until the backend and associated tests are written
               </li>
               <li className='mb-4'>
-                CI/CD (Frontend): <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> Funcional GitHub Actions are already rolling on each push
+                CI/CD (Frontend): <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> Functional GitHub Actions are already rolling on each push
               </li>
               <li className='mb-4'>
                 Blog Post: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> This About page will serve for now, later I'll migrate this over to a real blog

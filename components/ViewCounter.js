@@ -6,7 +6,10 @@ export default function ViewCounter() {
       "viewCount": 100
     },
     "PAGE#/about": {
-      "viewCount": 101
+      "viewCount": 200
+    },
+    "PAGE#/resume": {
+      "viewCount": 300
     }
   }
   const router = useRouter()
