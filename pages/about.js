@@ -47,7 +47,7 @@ export default function About() {
                 DNS: <span className='bg-green-400 rounded-md px-2 py-1'>COMPLETE</span> NameCheap DNS is pointing at the CloudFront distribution
               </li>
               <li className='mb-4'>
-                Javascript: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> Although the entire website is written in Javascript (using NextJS), the visitor counter is displaying static data
+                Javascript: <span className='bg-yellow-400 rounded-md px-2 py-1'>IN PROGRESS</span> Although the entire website is written in Javascript (using NextJS), visitor counter is displaying static data, needs to update from DDB next
               </li>
               <li className='mb-4'>
                 Database: <span className='bg-red-400 rounded-md px-2 py-1'>NOT STARTED</span> Creating a table in DynamoDB to store visitor counter data is the easy part
@@ -84,6 +84,7 @@ export default function About() {
           <p className='my-2'>
             The view counter at the bottom is powered by <FL href='https://aws.amazon.com/lambda/' aria='AWS Lambda' text='AWS Lambda' /> and is written in <FL href='https://go.dev/' aria='Go Programming Language' text='Go' />; this is a point where I diverge from Forrest's suggestion to use Python. The Lambda function receives requests via an <FL href='https://aws.amazon.com/api-gateway/' aria='AWS API Gateway' text='AWS API Gateway' /> which reads and writes the counter value from <FL href='https://aws.amazon.com/dynamodb/' aria='AWS DynamoDB' text='AWS DynamoDB' />. All of the AWS architecture is deployed via <FL href='https://aws.amazon.com/cloudformation/' aria='AWS CloudFormation' text='AWS CloudFormation' /> templates and is versioned in source control using <FL href='https://git-scm.com/' aria='Git Source Control Management' text='Git' />. You can view the source on Glenn's Github repository <FL href='https://github.com/grossmeyer/cloudresume' aria='Glenn Meyer Github Repository' text='here' />.
           </p>
+          <p>NOTE: ViewCounter is currently displaying static values and is not updating. See status of API/Programming</p>
 
         </article>
       </main>
