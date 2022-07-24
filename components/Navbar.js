@@ -32,10 +32,10 @@ export default function Navbar() {
               <Link href='/'>
                 <a className={router.pathname == '/' ? activePage : otherPage}>Home</a>
               </Link>
-              <Link href='/resume' >
+              <Link href='/resume/' >
                 <a className={router.pathname == '/resume' ? activePage : otherPage}>Resume</a>
               </Link>
-              <Link href='/about' >
+              <Link href='/about/' >
                 <a className={router.pathname == '/about' ? activePage : otherPage}>About</a>
               </Link>
             </div>
@@ -62,8 +62,8 @@ export default function Navbar() {
         <div className='hidden mobile-menu'>
           <ul className='flex flex-col items-center'>
             <li className={router.pathname == '/' ? mobileActive : mobileOther}><Link href='/'>Home</Link></li>
-            <li className={router.pathname == '/resume' ? mobileActive : mobileOther}><Link href='/resume'>Resume</Link></li>
-            <li className={router.pathname == '/about' ? mobileActive : mobileOther}><Link href='/about'>About</Link></li>
+            <li className={router.pathname == '/resume' ? mobileActive : mobileOther}><Link href='/resume/'>Resume</Link></li>
+            <li className={router.pathname == '/about' ? mobileActive : mobileOther}><Link href='/about/'>About</Link></li>
           </ul>
         </div>
       </section>
