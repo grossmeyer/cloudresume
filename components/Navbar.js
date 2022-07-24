@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className='flex justify-between'>
           {/* Logo */}
           <section className='flex items-center py-4 px-2'>
-            <img src='avatar.webp' alt='GlennMeyer.DEV Logo' width='32' height='35' className='w-8 mr-2' />
+            <img src='/avatar.webp' alt='GlennMeyer.DEV Logo' width='32' height='35' className='w-8 mr-2' />
             <span className='font-semibold text-sky-700 text-lg'>GLENN MEYER</span>
           </section>
           {/* Main Nav Items */}
