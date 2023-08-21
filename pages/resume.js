@@ -84,13 +84,17 @@ export default function Home() {
             <hr className='w-1/6 border-slate-700' />
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Lead Infrastructure Architect <span className='font-medium text-lg'>(March 2022 - Present)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
+              <li>Automation Tooling (Go, Python, Bash, PowerShell, Ansible)</li>
+              <li>Arista Networking (BGP, VXLAN, EVPN)</li>
+              <li>Cisco Networking (Catalyst, Nexus, MDS, WLC, and ASA)</li>
+              <li>Cisco UCS (C-Series, B-Series, M4, M5, M6)</li>
+              <li>NetApp Storage (A150/A900, ONTAP 9)</li>
               <li>Linux (SUSE and RedHat)</li>
               <li>Windows Server</li>
-              <li>Git/Github Administration</li>
-              <li>Ansible and Automation (Bash, PowerShell, Python)</li>
-              <li>F5 BIG-IP Load Balancer</li>
-              <li>Cisco Networking (Catalyst, Nexus, WLC, and ASA)</li>
               <li>Fortinet Fortigate</li>
+              <li>Git/Github Administration</li>
+              <li>F5 BIG-IP Load Balancer</li>
+              <li>Commvault Backup</li>
               <li>PRTG Monitoring</li>
             </ul>
           </section>
