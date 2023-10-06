@@ -126,9 +126,9 @@ export default function Home() {
             </ul>
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Network Engineer <span className='font-medium text-lg'>(December 2016 - February 2021)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
-              <li>Implemented Forescout Counteract Network Access Control to automatically detect and classify every device connected to the internal corporate network; if a device did meet our security expectations and internal validation requirements it was removed from the network; this system replaced Cisco ISE</li>
+              <li>Implemented Forescout Counteract Network Access Control to automatically detect and classify every device connected to the internal corporate network; if a device did not meet our security expectations and internal validation requirements it was removed from the network; this system replaced Cisco ISE</li>
               <li>Updated and adjusted policies within Forescout Counteract as changes were required from management, audit results, and/or penetration test results or as other changes in the environment warranted (for example, changing VoIP vendors)</li>
-              <li>Automated switch and router configurations for Cisco and Juniper devices using Solarwinds Network Configuration Manager to quickly deploy hundreds or thousands of changes with minimal or zero manual configuration</li>
+              <li>Automated switch and router configurations for Cisco and Juniper devices using Solarwinds Network Configuration Manager to quickly deploy hundreds or thousands of changes with zero or minimal manual configuration</li>
               <li>Coordinated with telecom team to configure custom DHCP options and LLDP-MED policies for VoIP configuration and provisioning</li>
               <li>Designed a secure VoIP network architecture that enabled SIP trunking through a Centurylink (now Lumen) voice network while also allowing inbound connections for softphones on cellphones and laptops via a direct internet connection, all while being completely isolated from our production network</li>
               <li>Collaborated with desktop support teams to configure custom DHCP options and settings at the switch level to support Windows 10 PXE boot imaging in a Microsoft SCCM environment</li>
