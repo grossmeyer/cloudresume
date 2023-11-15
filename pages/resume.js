@@ -40,7 +40,8 @@ export default function Home() {
               Education
             </h2>
             <hr className='mb-5 w-1/6' />
-            <h3>BBA - Management</h3>
+            <h3>BBA - Management (HR concentration)</h3>
+            <p className='text-sm'><em>Minor in Accounting</em></p>
             <p className='text-sm'>Cleveland State University</p>
           </section>
           {/* Certifications Section */}
@@ -50,6 +51,7 @@ export default function Home() {
               Certifications
             </h2>
             <hr className='mb-5 w-1/6' />
+            <p className='text-sm'>NetApp Certified Technology Solutions Professional</p>
             <p className='text-sm'>Certified Kubernetes Administrator</p>
             <p className='text-sm'>AWS Solutions Architect - Associate</p>
             <p className='text-sm'>Certified ScrumMaster</p>
@@ -63,14 +65,15 @@ export default function Home() {
             <hr className='mb-5 w-1/6' />
             <ul className='list-disc'>
               <li className='text-sm ml-4'>Enterprise Systems Architecture</li>
+              <li className='text-sm ml-4'>Automation Tools (Go/Python/Javascript/SQL)</li>
               <li className='text-sm ml-4'>Agile Software Development and Project Management</li>
-              <li className='text-sm ml-4'>Networking (Routing and Switching)</li>
-              <li className='text-sm ml-4'>Information Security (Firewalls and Application Security)</li>
+              <li className='text-sm ml-4'>Technical Documentation (Visio/React/Markdown)</li>
+              <li className='text-sm ml-4'>Networking (BGP, EVPN, VXLAN, OSPF, 802.1X, STP)</li>
+              <li className='text-sm ml-4'>Information Security (Firewalls, Application Security, Data Protection)</li>
               <li className='text-sm ml-4'>Virtualization (VMware and Hyper-V)</li>
+              <li className='text-sm ml-4'>Enterprise Storage SAN and NAS (iSCSI, Fibre Channel, NFS, CIFS)</li>
               <li className='text-sm ml-4'>Workstation and Server Management (Windows and Linux)</li>
               <li className='text-sm ml-4'>AWS Lambda and DynamoDB</li>
-              <li className='text-sm ml-4'>Programming (Javascript/Go/Python)</li>
-              <li className='text-sm ml-4'>Technical Documentation (Visio/Markdown)</li>
             </ul>
           </section>
         </aside>
@@ -84,10 +87,18 @@ export default function Home() {
             <hr className='w-1/6 border-slate-700' />
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Lead Infrastructure Architect <span className='font-medium text-lg'>(March 2022 - Present)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
-              <li>Automation Tooling (Go, Python, Bash, PowerShell, Ansible)</li>
-              <li>Arista Networking (BGP, VXLAN, EVPN)</li>
+              <li>Tech Lead for IT infrastructure design, procurement, and implementation for 700K sq ft greenfield warehouse</li>
+              <li>Wrote tool for NetApp to facilitate ease and standardization of routine operations, such as migrations and data refreshes</li>
+              <li>Built tool for Cisco switches to unify configurations across all remote sites</li>
+              <li>Spoke at NetApp Insight 2023: co-panel with CDW and Southwest Airlines</li>
+              <li>Technologies and Skills:</li>
+            </ul>
+            <ul className='list-circle text-slate-900 ml-8'>
+              <li>Automation Tooling (Go, SQL, Python, Bash, PowerShell, Ansible)</li>
+              <li>Modern Network Design using BGP, EVPN, and VXLAN</li>
+              <li>Arista Networking (Datacenter and Campus switches)</li>
               <li>Cisco Networking (Catalyst, Nexus, MDS, WLC, and ASA)</li>
-              <li>Cisco UCS (C-Series, B-Series, M4, M5, M6)</li>
+              <li>Cisco UCS (C-Series, B-Series, M4, M5, M6, M7)</li>
               <li>NetApp Storage (A150/A900, ONTAP 9)</li>
               <li>Linux (SUSE and RedHat)</li>
               <li>Windows Server</li>
