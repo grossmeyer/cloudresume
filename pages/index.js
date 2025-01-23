@@ -46,15 +46,16 @@ export default function Home() {
             </h2>
             <hr className='mb-5 w-1/6' />
             <ul className='list-disc'>
-              <li className='text-sm ml-4'>Enterprise Systems Architecture</li>
-              <li className='text-sm ml-4'>Agile Software Development and Project Management</li>
-              <li className='text-sm ml-4'>Networking (Routing and Switching)</li>
-              <li className='text-sm ml-4'>Information Security (Firewalls and Application Security)</li>
+              <li className='text-sm ml-4'>Enterprise Infrastructure Architecture and Design</li>
+              <li className='text-sm ml-4'>Automation and Programming (Go, SQL, Python, Bash, PowerShell, Ansible)</li>
               <li className='text-sm ml-4'>Virtualization (VMware and Hyper-V)</li>
-              <li className='text-sm ml-4'>Workstation and Server Management (Windows and Linux)</li>
-              <li className='text-sm ml-4'>AWS Lambda and DynamoDB</li>
-              <li className='text-sm ml-4'>Programming (Javascript/Go/Python)</li>
-              <li className='text-sm ml-4'>Technical Documentation (Visio/Markdown)</li>
+              <li className='text-sm ml-4'>Enterprise Storage and Data Protection (NetApp, Isilon, PowerMax, Commvault)</li>
+              <li className='text-sm ml-4'>Agile Software Development and IT Project Management</li>
+              <li className='text-sm ml-4'>Networking (Route/Switch/LAN/WAN/SAN)</li>
+              <li className='text-sm ml-4'>Information Security (Firewalls and Application Security)</li>
+              <li className='text-sm ml-4'>Enterprise Servers (Windows 2012/2016/2019/2022, Linux SUSE/RedHat/Ubuntu)</li>
+              <li className='text-sm ml-4'>Cloud Microservices Architecture (Lambda, DynamoDB)</li>
+              <li className='text-sm ml-4'>Technical Documentation (Visio, Markdown)</li>
             </ul>
           </section>
           {/* Certifications Section */}
@@ -64,9 +65,25 @@ export default function Home() {
               Certifications
             </h2>
             <hr className='mb-5 w-1/6' />
-            <p className='text-sm'>Certified Kubernetes Administrator</p>
+            <h3 className='uppercase tracking-widest font-bold'>
+              Active and Current
+            </h3>
+            <hr className='mb-5 w-1/6' />
+            <p className='text-sm'>NetApp Certified Data Administrator (NCDA)</p>
+            <p className='text-sm'>NetApp Certified Technology Solutions Professional (NCTSP)</p>
+            <p></p>
+            <h3 className='uppercase tracking-widest font-bold'>
+              Previously Held
+            </h3>
+            <hr className='mb-5 w-1/6' />
+            <p className='text-sm'>Certified Kubernetes Administrator (CKA)</p>
             <p className='text-sm'>AWS Solutions Architect - Associate</p>
-            <p className='text-sm'>Certified ScrumMaster</p>
+            <p className='text-sm'>Cisco CCNA</p>
+            <p className='text-sm'>Juniper JNCIA - Junos</p>
+            <p className='text-sm'>CompTIA Security+</p>
+            <p className='text-sm'>CompTIA Network+</p>
+            <p className='text-sm'>CompTIA A+</p>
+            <p className='text-sm'>Certified Scrum Master</p>
           </section>
           {/* Education Section */}
           <section>
@@ -80,7 +97,6 @@ export default function Home() {
           </section>
         </article>
       </main>
-      <ViewCounter />
     </>
   )
 }
