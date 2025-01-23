@@ -51,10 +51,25 @@ export default function Home() {
               Certifications
             </h2>
             <hr className='mb-5 w-1/6' />
-            <p className='text-sm'>NetApp Certified Technology Solutions Professional</p>
-            <p className='text-sm'>Certified Kubernetes Administrator</p>
+            <h3 className='uppercase tracking-widest font-bold'>
+              Active and Current
+            </h3>
+            <hr className='mb-5 w-1/6' />
+            <p className='text-sm'>NetApp Certified Data Administrator (NCDA)</p>
+            <p className='text-sm'>NetApp Certified Technology Solutions Professional (NCTSP)</p>
+            <hr className='mb-5 w-1/6' />
+            <h3 className='uppercase tracking-widest font-bold'>
+              Previously Held
+            </h3>
+            <hr className='mb-5 w-1/6' />
+            <p className='text-sm'>Certified Kubernetes Administrator (CKA)</p>
             <p className='text-sm'>AWS Solutions Architect - Associate</p>
-            <p className='text-sm'>Certified ScrumMaster</p>
+            <p className='text-sm'>Cisco CCNA</p>
+            <p className='text-sm'>Juniper JNCIA - Junos</p>
+            <p className='text-sm'>CompTIA Security+</p>
+            <p className='text-sm'>CompTIA Network+</p>
+            <p className='text-sm'>CompTIA A+</p>
+            <p className='text-sm'>Certified Scrum Master</p>
           </section>
           {/* Skills Section */}
           <section className='text-slate-100'>
@@ -242,7 +257,6 @@ export default function Home() {
           </section>
         </article>
       </main>
-      <ViewCounter />
     </>
   )
 }
