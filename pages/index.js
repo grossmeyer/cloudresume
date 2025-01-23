@@ -37,7 +37,12 @@ export default function Home() {
         </aside>
         <article className='md:w-7/12 w-auto h-auto p-10'>
           <h1 className='text-sky-800 text-3xl font-semibold'>Glenn Meyer</h1>
-          <p>Change Agent driving organizations towards agile development, cloud computing, automation, and embracing DevOps philosophy</p>
+          <hr className='mb-5 w-1/6' />
+          <p>My skill set has always placed me at the intersection of business and technology. The approach
+I’ve adopted is to be both learner and teacher, always finding ways to explain technical needs to
+the business, while relating the business needs back to my technical peers. Big picture design
+work for enterprise technologies combined with the precise implementation and operation of
+said design has been the primary focus of my career.</p>
           {/* Skills Section */}
           <section>
             <hr className='my-5' />
@@ -71,7 +76,7 @@ export default function Home() {
             <hr className='mb-5 w-1/6' />
             <p className='text-sm'>NetApp Certified Data Administrator (NCDA)</p>
             <p className='text-sm'>NetApp Certified Technology Solutions Professional (NCTSP)</p>
-            <p></p>
+            <hr className='mb-5 w-1/6' />
             <h3 className='uppercase tracking-widest font-bold'>
               Previously Held
             </h3>
