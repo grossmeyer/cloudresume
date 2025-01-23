@@ -64,48 +64,67 @@ export default function Home() {
             </h2>
             <hr className='mb-5 w-1/6' />
             <ul className='list-disc'>
-              <li className='text-sm ml-4'>Enterprise Systems Architecture</li>
-              <li className='text-sm ml-4'>Automation Tools (Go/Python/Javascript/SQL)</li>
-              <li className='text-sm ml-4'>Agile Software Development and Project Management</li>
-              <li className='text-sm ml-4'>Technical Documentation (Visio/React/Markdown)</li>
-              <li className='text-sm ml-4'>Networking (BGP, EVPN, VXLAN, OSPF, 802.1X, STP)</li>
-              <li className='text-sm ml-4'>Information Security (Firewalls, Application Security, Data Protection)</li>
+              <li className='text-sm ml-4'>Enterprise Infrastructure Architecture and Design</li>
+              <li className='text-sm ml-4'>Automation and Programming (Go, SQL, Python, Bash, PowerShell, Ansible)</li>
               <li className='text-sm ml-4'>Virtualization (VMware and Hyper-V)</li>
+              <li className='text-sm ml-4'>Enterprise Storage and Data Protection (NetApp, Isilon, PowerMax, Commvault)</li>
               <li className='text-sm ml-4'>Enterprise Storage SAN and NAS (iSCSI, Fibre Channel, NFS, CIFS)</li>
-              <li className='text-sm ml-4'>Workstation and Server Management (Windows and Linux)</li>
-              <li className='text-sm ml-4'>AWS Lambda and DynamoDB</li>
+              <li className='text-sm ml-4'>Agile Software Development and IT Project Management</li>
+              <li className='text-sm ml-4'>Networking (Route/Switch/LAN/WAN)</li>
+              <li className='text-sm ml-4'>Networking Protocols (BGP, EVPN, VXLAN, VRF, OSPF, EIGRP, MLAG, LACP, LLDP)</li>
+              <li className='text-sm ml-4'>Information Security (Firewalls and Application Security)</li>
+              <li className='text-sm ml-4'>Enterprise Servers (Windows 2012/2016/2019/2022, Linux SUSE/RedHat/Ubuntu)</li>
+              <li className='text-sm ml-4'>Cloud Microservices Architecture (Lambda, DynamoDB)</li>
+              <li className='text-sm ml-4'>Technical Documentation (Visio, React, Markdown)</li>
             </ul>
           </section>
         </aside>
         <article className='md:w-7/12 w-auto h-auto p-10'>
           <h1 className='text-sky-800 text-3xl font-semibold'>Glenn Meyer</h1>
-          <p>Change Agent driving organizations towards agile development, cloud computing, automation, and embracing DevOps philosophy</p>
+          <hr className='w-1/6 border-slate-700' />
+          <p>My skill set has always placed me at the intersection of business and technology. The approach I’ve adopted is to be both learner and teacher, always finding ways to explain technical needs to the business, while relating the business needs back to my technical peers. Big picture design work for enterprise technologies combined with the precise implementation and operation of said design has been the primary focus of my career.</p>
           <h2 className='font-semibold uppercase tracking-wider mt-6 mb-2 text-slate-500 text-2xl'>Professional Experience</h2>
           {/* Employer 1 Section */}
           <section>
-            <h3 className='text-slate-700 text-2xl mt-4'>Fortune Brands Water Innovations - Moen, Inc.</h3>
+            <h3 className='text-slate-700 text-2xl mt-4'>Fortune Brands Innovations - Moen, Inc.</h3>
             <hr className='w-1/6 border-slate-700' />
             <h4 className='text-slate-800 font-semibold text-xl mt-4'>Lead Infrastructure Architect <span className='font-medium text-lg'>(March 2022 - Present)</span></h4>
             <ul className='list-disc text-slate-900 ml-4'>
-              <li>Tech Lead for IT infrastructure design, procurement, and implementation for 700K sq ft greenfield warehouse</li>
-              <li>Wrote tool for NetApp to facilitate ease and standardization of routine operations, such as migrations and data refreshes</li>
-              <li>Built tool for Cisco switches to unify configurations across all remote sites</li>
+              <li>Managed infrastructure related to both technology standards and operations for a global enterprise, including enterprise network standards, SUSE/RedHat Linux server lifecycle (using Ansible), network segmentation policy, and firewall security policy (LAN/WAN)</li>
+              <li>Standardized enterprise hardware using best-of-breed solutions, achieving at least 30% reduction in TCO per deployment:</li>
+              <ul className='text-slate-900 ml-4'>
+                <li>Cisco UCS at 9 sites (3 datacenters)</li>
+                <li>Arista Networking at 9 sites (2 datacenters)</li>
+                <li>NetApp at 9 sites (3 datacenters)</li>
+                <li>Fortinet Fortigate at 21 sites (2 datacenters)</li>
+                <li>Commvault at 25 sites (2 datacenters)</li>
+                <li>Juniper Mist at 13 sites</li>
+              </ul>
+              <li>Created enterprise storage tool (written in Go) to streamline routine operations for NetApp, such as RDM migrations and refreshes (interacts with VMware REST API, ONTAP API, and SSH)</li>
+              <li>Developed network automation tool (written in Go) to standardize Cisco IOS configuration across hundreds of switches globally (using SSH and SQL)</li>
+              <li>Built tool (written in Python) to bootstrap Cisco switches for fast deployments and restores</li>
+              <li>Designed and deployed modern network standards using Arista Networks hardware and advanced routing (BGP, VXLAN, EVPN, multi-VRF) to support organizational Network Segmentation requirements, especially for IT/OT separation</li>
+              <li>Converted WAN connections to SD-WAN using Aryaka ANAPs and migrated routing at sites to utilize BGP, eliminating costly MPLS connections</li>
+              <li>Consulted with Web and Data Analytics teams to create standards around CI/CD pipelines using Kubernetes/Containers in Azure and Git/GitHub repository best practices</li>
               <li>Spoke at NetApp Insight 2023: co-panel with CDW and Southwest Airlines</li>
+              <li>Part of Customer Heroes Program at NetApp Insight 2024</li>
+              <li>Spoke at NetApp Partner Academy Cleveland: NetApp Customer Reference September 2024</li>
+              <li>Spoke at NetApp/CDW Pittsburgh Event: NetApp Customer Reference October 2024</li>
               <li>Technologies and Skills:</li>
             </ul>
             <ul className='list-circle text-slate-900 ml-8'>
               <li>Automation Tooling (Go, SQL, Python, Bash, PowerShell, Ansible)</li>
-              <li>Modern Network Design using BGP, EVPN, and VXLAN</li>
+              <li>Modern Network Design using BGP, EVPN, VXLAN, MLAG, and Layer 2 Leaf Spine</li>
               <li>Arista Networking (Datacenter and Campus switches)</li>
               <li>Cisco Networking (Catalyst, Nexus, MDS, WLC, and ASA)</li>
               <li>Cisco UCS (C-Series, B-Series, M4, M5, M6, M7)</li>
-              <li>NetApp Storage (A150/A900, ONTAP 9)</li>
-              <li>Linux (SUSE and RedHat)</li>
-              <li>Windows Server</li>
+              <li>NetApp Storage (AFF-series, ONTAP 9)</li>
+              <li>Linux (SUSE, RedHat, Ubuntu)</li>
+              <li>Windows Server and Active Directory (2012, 2016, 2019, 2022)</li>
               <li>Fortinet Fortigate</li>
               <li>Git/Github Administration</li>
               <li>F5 BIG-IP Load Balancer</li>
-              <li>Commvault Backup</li>
+              <li>Commvault Backup (Hyperscale appliances)</li>
               <li>PRTG Monitoring</li>
             </ul>
           </section>
